@@ -4,9 +4,9 @@
   const ProductGrid = ({ products, handleAddToCart }) => {
     return (
       <div className="">
-        {products && products.length > 0 ? (
+        {products && products?.length > 0 ? (
           <div className="col-span-1 lg:col-span-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {products.map((product) => (
+            {products?.map((product) => (
               <ProductCard key={product.productId} product={product} handleAddToCart={handleAddToCart} />
             ))}
           </div>

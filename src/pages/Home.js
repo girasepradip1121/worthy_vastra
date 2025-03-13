@@ -2,7 +2,7 @@ import React from "react";
 import HeroSection from "../components/HeroSection";
 import Features from "../components/Features";
 import StartExploring from "../components/StartExploring";
-import Recommendations from "../components/Recommendations";
+// import Recommendations from "../components/Recommendations";
 import BestSellers from "../components/BestSellers";
 import BannerSection from "../components/BannerSection";
 // import Footer from "../components/Footer";
@@ -16,7 +16,7 @@ const Home = () => {
       <Fivetype/>
       <Features />
       <StartExploring />
-      <Recommendations />
+      {/* <Recommendations /> */}
       <BannerSection /><br/>
       <BestSellers /> 
     </div>
