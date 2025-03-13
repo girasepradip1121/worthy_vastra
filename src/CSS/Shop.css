@@ -1,0 +1,238 @@
+
+
+.shop-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.left-shop-container{
+    width: 25%;
+    /* background-color: aqua; */
+    /* height: 100vh; */
+}
+
+.right-shop-container{
+    width: 75%;
+    /* height: 100vh; */
+    /* background-color: orange; */
+}
+
+
+.filter-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 200px;
+    width: 285px;
+    margin-top: 40px;
+    font-family: Outfit;
+    border-bottom: 1px solid gray;
+}
+
+.filter-section label {
+    /* font-weight: bold; */
+    font-size: 18px;
+    line-height: 28px;
+    text-align: start;
+    margin-left: 50px;
+}
+
+
+.checkbox-group label {
+    /* font-weight: bold; */
+    color: #554D5A;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: start;
+    margin-left: 50px;
+    /* gap: 12px; */
+}
+.custom-checkbox:checked {
+    accent-color: #FFA60A;
+}
+.checkbox-group, .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Done */
+    .price-range-slider1 {
+        /* width: 300px; */
+        /* margin: 20px auto; */
+        
+        align-items: start;
+        font-family: Karla;
+
+      }
+      
+      h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        /* font-weight: 600; */
+        line-height: 28px;
+        /* text-align: center; */
+      }
+      
+      .slider1-container {
+        position: relative;
+        height: 20px;
+        margin-bottom: 20px;
+      }
+      
+      .slider1-track {
+        position: absolute;
+        
+        background: #ebebeb;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-25%);
+        z-index: 1;
+      }
+      
+      .slider1-active {
+        position: absolute;
+        height: 4px;
+        background: #2e6be4;
+        top: 50%;
+        transform: translateY(-100%);
+        z-index: 1;
+      }
+      
+      .slider1 {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background: none;
+        pointer-events: none; /* Ensures only the visible thumb handles interact with the user */
+      }
+      
+      .slider1::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        background: #2e6be4;
+        border-radius: 50%;
+        pointer-events: all; /* Allows thumb handles to be draggable */
+        cursor: pointer;
+        z-index:3;
+        margin-top: 1px;
+      }
+      
+      .slider1::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        background: #000;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+      .price-inputs {
+        display: flex;
+        
+        /* font-size: 16px; */
+        font-weight: 400;
+        color: #554D5A;
+        justify-content: space-between;
+      }
+      
+      .price-inputs div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .price-inputs div input{
+        /* margin-left: 1px; */
+        height: 36px;
+        width: 136px;
+        border-radius: 25px;
+      }
+
+      .price-inputs div label{
+        margin-left: 15px;
+        font-size: 16px;
+        height: 36px;
+        width: 136px;
+        border-radius: 25px;
+      }
+      label {
+        /* margin-bottom: 5px; */
+        font-size: 14px;
+      }
+      
+      .price-inputs input[type="number"] {
+        width: 90px;
+        padding: 5px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        position: relative;
+      }
+
+      /* input[type="number"] {
+        width: 80px;
+        padding: 5px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        position: relative;
+      } */
+      
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    .price-inputs .sign{
+        position: relative;
+        bottom: 32px;
+        left: 30px;
+        font-size: 20px;
+    }
+    
+
+
+      .radio-group label{
+            font-size: 14px;
+            line-height: 20px;
+            color: #554D5A;
+      }
+
+      input[type="radio"] {
+        position: relative;
+        appearance: none; /* Removes the default styling */
+        width: 15px;
+        height: 15px;
+        border: 2px solid #ccc;
+        border-radius: 50%;
+        outline: none;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: #fff; /* Unchecked state background */
+      }
+
+
+      
+      /* Style for the checked radio button */
+      input[type="radio"]:checked {
+        /* border-color: #000; Border color when checked */
+        border: none;
+        background-color: #4B5563; /* Background color when checked */
+      }
